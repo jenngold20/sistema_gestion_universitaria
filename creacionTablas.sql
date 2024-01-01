@@ -6,7 +6,7 @@ USE sistema_gestion_universitaria;
 CREATE TABLE IF NOT EXISTS Departamento (
     idDepartamento INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
-    teléfono VARCHAR(15) NOT NULL
+    telefono VARCHAR(15) NOT NULL
 );
 
 -- Creación de la tabla Profesor
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS Profesor_Departamento (
 CREATE TABLE IF NOT EXISTS Asignatura (
     idAsignatura INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
-    créditos INT NOT NULL
+    creditos INT NOT NULL
 );
 
 -- Creación de la tabla Aula
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS Aula (
 CREATE TABLE IF NOT EXISTS Curso (
     idCurso INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
-    créditos INT NOT NULL
+    creditos INT NOT NULL
 );
 
 -- Creación de la tabla Estudiante
