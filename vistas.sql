@@ -34,3 +34,12 @@ INNER JOIN Curso c ON e.idCurso = c.idCurso
 HAVING PuntajeTotal > 80
 ORDER BY c.nombre, e.tipo;
 
+-- Vista para mostrar la información de los departamentos y la cantidad de profesores pertenecientes a cada uno, ordenada por cantidad de profesores de forma descendente
+CREATE VIEW VistaDepartamentosProfesores AS
+SELECT d.nombre AS NombreDepartamento, d.telefono AS TelefonoDepartamento, 
+COUNT(p.idProfesor) AS CantidadProfesores
+FROM Departamento d
+LEFT JOIN Profesor_Departamento pd ON d.idDepartamento = pd.idDepartamento
+LEFT JOIN Profesor p ON pd.idProfesor = p.idProfesor
+GROUP BY d.nombre, d.telefono
+ORDER BY CantidadProfesores DESC;

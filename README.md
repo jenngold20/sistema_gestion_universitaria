@@ -14,7 +14,7 @@ El diseño de la base de datos consta de las siguientes tablas principales:
 
 - **Profesor**: Guarda los datos de los profesores, incluyendo su nombre, apellido y especialidad.
 
-- **Enseña**: Asocia profesores con las asignaturas que enseñan, incluyendo el año en que imparten la asignatura.
+- **Profesor_Asignatura**: Asocia profesores con las asignaturas que enseñan, incluyendo el año en que imparten la asignatura.
 
 - **Aula**: Describe las aulas disponibles, incluyendo su nombre y capacidad.
 
@@ -22,7 +22,7 @@ El diseño de la base de datos consta de las siguientes tablas principales:
 
 - **Departamento**: Contiene información sobre los departamentos académicos, incluyendo su nombre y teléfono.
 
-- **Perteneciente**: Relaciona profesores con los departamentos a los que pertenecen, incluyendo las fechas de inicio y fin de su pertenencia al departamento.
+- **Profesor_Departamento**: Relaciona profesores con los departamentos a los que pertenecen, incluyendo las fechas de inicio y fin de su pertenencia al departamento.
 
 - **Clase**: Asocia cursos, aulas y profesores con clases programadas, incluyendo el día de la semana y las horas de inicio y fin.
 
