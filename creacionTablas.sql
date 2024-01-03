@@ -77,3 +77,29 @@ CREATE TABLE IF NOT EXISTS Profesor_Asignatura (
     FOREIGN KEY (idAsignatura) REFERENCES Asignatura(idAsignatura)
     
 );
+
+-- Creación de la tabla Clase
+CREATE TABLE Clase (
+    idClase INT AUTO_INCREMENT PRIMARY KEY,
+    idCurso INT,
+    idAula INT,
+    idProfesor INT,
+    dia_semana VARCHAR(15),
+    hora_inicio TIME,
+    hora_fin TIME,
+    FOREIGN KEY (idCurso) REFERENCES Curso(idCurso),
+    FOREIGN KEY (idAula) REFERENCES Aula(idAula),
+    FOREIGN KEY (idProfesor) REFERENCES Profesor(idProfesor)
+);
+
+-- Creación de la tabla Evaluacion
+CREATE TABLE Evaluacion (
+    idEvaluacion INT AUTO_INCREMENT PRIMARY KEY,
+    idCurso INT,
+    idAsignatura INT,
+    tipo VARCHAR(20),
+    fecha DATE,
+    puntaje_total INT,
+    FOREIGN KEY (idCurso) REFERENCES Curso(idCurso),
+    FOREIGN KEY (idAsignatura) REFERENCES Asignatura(idAsignatura)
+);
