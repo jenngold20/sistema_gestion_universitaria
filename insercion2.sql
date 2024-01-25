@@ -125,3 +125,23 @@ INSERT INTO Profesor_Departamento (idProfesor, idDepartamento, desde_fecha, hast
     (23, 8, '2022-01-01', NULL),
     (24, 9, '2022-01-01', NULL),
     (25, 10, '2022-01-01', NULL);
+
+
+
+-- Inserción de datos en la tabla EvaluacionEstudiante
+INSERT INTO EvaluacionEstudiante (idEstudiante, idEvaluacion, puntajeObtenido) VALUES
+    (1, 1, 85),
+    (2, 2, 90),
+    (3, 3, 75),
+    (4, 4, 80),
+    (5, 5, 95),
+    (6, 6, 85),
+    (7, 7, 70),
+    (8, 8, 75),
+    (9, 9, 85),
+    (10, 10, 90),
+    (11, 11, 80),
+    (12, 12, 95),
+    (13, 13, 85),
+    (14, 14, 70),
+    (15, 15, 75);
