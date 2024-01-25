@@ -103,3 +103,14 @@ CREATE TABLE Evaluacion (
     FOREIGN KEY (idCurso) REFERENCES Curso(idCurso),
     FOREIGN KEY (idAsignatura) REFERENCES Asignatura(idAsignatura)
 );
+
+-- Creación de la tabla EvaluacionEstudiante
+
+CREATE TABLE IF NOT EXISTS EvaluacionEstudiante (
+    idEvaluacionEstudiante INT AUTO_INCREMENT PRIMARY KEY,
+    idEstudiante INT,
+    idEvaluacion INT,
+    puntajeObtenido BIGINT,
+    FOREIGN KEY (idEstudiante) REFERENCES Estudiante(idEstudiante),
+    FOREIGN KEY (idEvaluacion) REFERENCES Evaluacion(idEvaluacion)
+);
