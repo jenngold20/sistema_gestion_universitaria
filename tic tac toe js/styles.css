@@ -1,0 +1,56 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #fce4ec; 
+  margin: 0; 
+  padding: 0; 
+  
+  height: 100vh; 
+  }
+  
+  h1 {
+    color: #ff69b4; /* Color rosa oscuro de Barbie */
+  }
+  
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+  
+  .cell {
+    background-color: #fff; /* Color blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ff69b4; /* Color rosa oscuro de Barbie */
+    border-radius: 10px; /* Esquinas redondeadas */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+  }
+  
+  .cell:hover {
+    background-color: #ffe4e1; /* Color rosa claro suave al pasar el mouse */
+  }
+  
+  #reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff69b4; /* Color rosa oscuro de Barbie */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+  }
+  
+  #reset:hover {
+    background-color: #ff1493; /* Color rosa más intenso al pasar el mouse */
+  }
+  
